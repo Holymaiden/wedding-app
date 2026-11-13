@@ -97,7 +97,7 @@ English and Hindi text is stored in:
 - `src/locales/langs/en/home.json`
 - `src/locales/langs/hi/home.json`
 
-Keep translation keys aligned between the files when adding or changing displayed text. Hindi is the default language for new visitors. The language toggle lets visitors switch to English, and their selection is saved in a browser cookie for later visits.
+Keep translation keys aligned between the files when adding or changing displayed text. English is the default language for new visitors. The language toggle lets visitors switch to Hindi, and their selection is saved in a browser cookie for later visits.
 
 ### Media
 

@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import { LangProvider, LocalizationProvider } from '@/locales';
-import { detectLanguage } from '@/locales/server';
 import { Toaster } from 'sonner';
 import { Analytics } from '@vercel/analytics/next';
 
@@ -18,15 +17,13 @@ export const metadata: Metadata = {
     'Join us in celebrating the auspicious union of love and togetherness. Discover our wedding details, and more.',
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const lang = await detectLanguage();
-
   return (
-    <html lang={lang}>
+    <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
         <LangProvider>
           <LocalizationProvider>
